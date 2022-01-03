@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 - walidator hasła</title>
+    <script src="https://kit.fontawesome.com/5bcf0b1944.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body data-mode='dark'>
+
+    <div class="container">
+        <button class="mode"></button>
+        <h1 class="container__heading">walidator hasła</h1>
+        <label class="container__label" for="password">Sprawdź czy twoje hasło jest <span>bezpieczne!</span></label>
+        <input class="container__input" id="password" type="text" placeholder="Wpisz hasło...">
+        <p class="container__passinfo">Nie podałeś hasła...</p>
+        <div class="line"></div>
+        <h3 class="container__subheading">Hasło musi składać się z:</h3>
+        <ul class="container__list">
+            <li class="container__list-item">min. 8 znaków</li>
+            <li class="container__list-item">min. 1 wielkiej litery</li>
+            <li class="container__list-item">liter</li>
+            <li class="container__list-item">cyfr</li>
+        </ul>
+        <p class="container__strong-pass">Aby Twoje hasło było bardzo silne dodaj <span>znaki specjalne</span>.</p>
+    </div>
+
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
