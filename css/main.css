@@ -8,20 +8,20 @@
 }
 
 [data-mode='dark'] {
-  --bg-color: #333;
-  --bg-color-cont: #222;
-  --btn-color: rgb(209, 209, 209);
-  --font-color: rgb(230, 230, 230);
-  --main-color: rgb(224, 118, 18);
+  --bg-color: #000000;
+  --bg-color-cont: #14213d;
+  --btn-color: #e5e5e5;
+  --font-color: #e5e5e5;
+  --main-color: #fca311;
   --warning: rgb(177, 101, 101);
 }
 
 [data-mode='light'] {
-  --bg-color: rgb(231, 231, 231);
-  --bg-color-cont: rgb(214, 214, 214);
-  --btn-color: rgb(36, 36, 36);
-  --font-color: rgb(46, 46, 46);
-  --main-color: rgb(29, 103, 163);
+  --bg-color: #ffffff;
+  --bg-color-cont: #e4e4e4;
+  --btn-color: #353535;
+  --font-color: #353535;
+  --main-color: #2f7596;
   --warning: rgb(177, 101, 101);
 }
 
@@ -43,7 +43,7 @@ body {
   background-color: var(--bg-color);
   font-family: 'Josefin Sans', sans-serif;
   font-size: 1.8rem;
-  margin: 3em 0;
+  margin: 4em 0;
 }
 
 .container {
@@ -85,6 +85,16 @@ body {
 .container .mode:hover, .container .mode:focus {
   outline: none;
   border: 2px solid var(--main-color);
+}
+
+.container .mode i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-51%, -50%);
+          transform: translate(-51%, -50%);
+  font-size: 2rem;
+  opacity: 0.5;
 }
 
 .container .line {

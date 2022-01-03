@@ -48,12 +48,19 @@ pass.addEventListener('keyup', checkPass)
 // DARK MODE
 const btn = document.querySelector('.mode')
 const body = document.querySelector('body')
+const icon = document.querySelector('.icon')
 
 const changeMode = () => {
 	if (body.dataset.mode === 'dark') {
 		body.dataset.mode = 'light'
+		icon.classList.remove('fa-sun')
+		icon.classList.add('fa-moon')
+		icon.style.color = 'white'
 	} else {
 		body.dataset.mode = 'dark'
+		icon.classList.add('fa-sun')
+		icon.classList.remove('fa-moon')
+		icon.style.color = ''
 	}
 }
 
