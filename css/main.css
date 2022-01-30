@@ -7,6 +7,11 @@
   margin: 0;
 }
 
+* {
+  -webkit-transition: background-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
+}
+
 [data-mode='dark'] {
   --bg-color: #000000;
   --bg-color-cont: #14213d;
@@ -80,6 +85,7 @@ body {
   border-radius: 6px;
   -webkit-transition: border 0.3s;
   transition: border 0.3s;
+  cursor: pointer;
 }
 
 .container .mode:hover, .container .mode:focus {
@@ -141,6 +147,8 @@ body {
   margin-bottom: 1em;
   border: 2px solid transparent;
   border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px rgba(17, 17, 17, 0.2);
+          box-shadow: 0 0 10px rgba(17, 17, 17, 0.2);
 }
 
 .container__input:focus {
